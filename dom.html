@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .blog{
+            border: 2px solid red;
+            margin: 5px;
+            padding: 5px;
+            border-radius: 10px;
+        } */
+    </style>
+  
+</head>
+<body>
+    <header>
+        <h1>Welcome to my blog</h1>
+    </header>
+    <main>
+
+        <section id="blogs" class="blogs">
+            <header>
+                <h2>Blog list</h2>
+                <ul id="blog-list">
+                    <li>Blog-1</li>
+                    <li>Blog-2</li>
+                    <li>Blog-3</li>
+                    <li>Blog-4</li>
+                </ul>
+            </header>
+            <article class="blog">
+                <h3 id="first-title">Bandarban</h3>
+                <p>The three highest peaks of Bangladesh – Tahjindong (1280 meters, also known as Bijoy), Mowdok Mual (1052 meters), and Keokradong (883 metres) – are located in Bandarban district, as well as Raikhiang Lake, the highest lake in Bangladesh. Heights measured with Garmin GPSMAP60CSX GPS are Tahjindong (1280 meters), Mowdok Mual (1052 m), and Keokradong (1230 m). Chimbuk Peak and Boga Lake are two more highly noted features of the district. The Sangu River (also known as Sangpo or Shankha), the only river born inside Bangladesh territory, runs through Bandarban. The other rivers in the district are Matamuhuri and Bakkhali. Parts of Kaptai Lake, the biggest lake in Bangladesh, fall under the district.
+
+                  </p>
+            </article>
+            <article class="blog">
+                <h3 id="second-title">Jaflong</h3>
+                <p>In early 2005, Laskar Muqsudur Rahman, Deputy Conservator of Forests, Sylhet Forest Division, observed that Jaflong that he heard in his boyhood as the 'lungs' of Greater Sylhet was at stake due to on going encroachments and establishment of unauthorized stone crushing mills. He took initiatives to recover the land and establish a recreation-cum-botanical park named as 'Jaflong Green Park'. The first foundation stone for the thematic Green Park at Jaflong was laid by Laskar Muqsudur Rahman, Deputy Conservator of Forests in 2005 with the cooperation of local forest staffs led by Forest Ranger Mohammad Ali.</p>
+            </article>
+            <article class="blog">
+                <h3 id="third-title">Ahsan Manzil</h3>
+                <p>In Mughal era, there was a garden house of Sheikh Enayet Ullah, the landlord of Jamalpur Porgona (district), in this place. Sheikh Enayet Ullah was a very charming person. He acquired a very big area in Kumartoli (Kumartuli) and included it in his garden house. Here he built a beautiful palace and named it "Rongmohol" (Rangmahal). He used to enjoy here keeping beautiful girls collected from the country and abroad, dressing them with gorgeous dresses and expensive ornaments. There is a saying that, the founder of Dhaka (representative of mughal emperor) was attracted to one of the beautiful girls. He invited Sheikh Enayet Ullah to a party one night and killed him in a conspiracy when he was returning home. That girl also committed suicide in anger and sorrow. There was a grave of Sheikh Enayet Ullah in the north-east corner of the palace yard which was ruined in the beginning of the 20th century.
+
+                    Probably in the period of Nawab Alibardi Khan(Grandfather of Nawab Siraj-Ud-Daulah) around 1740 century, Sheikh Moti Ullah, the son of Sheikh Enayet Ullah, sold the property to the French traders. There was a French trading house beside this property. </p>
+            </article>
+            <article class="blog">
+                <h3 id="fourth-title">Sundarban</h3>
+                <p>Sundarbans is a mangrove area in the delta formed by the confluence of the Ganges, Brahmaputra and Meghna Rivers in the Bay of Bengal.
+                    It spans from the Hooghly River in India's state of West Bengal to the Baleswar River in Bangladesh's division of Khulna. It comprises 
+                   closed and open mangrove forests, land used for agricultural purpose, mudflats and barren land, and is intersected by multiple tidal streams 
+                   and channels. Four protected areas in the Sundarbans are enlisted as UNESCO World Heritage Sites, viz. Sundarbans National Park, Sundarbans West, 
+                   Sundarbans South and Sundarbans East Wildlife Sanctuaries.
+                   
+                 </p>
+            </article>
+        </section>
+    </main>
+
+
+    <script>
+        // const student ={name: 'rahim',age: 16, height:55 }
+        // const blogTitles =document.getElementsByTagName('h3');
+        // for (const h3 of blogTitles){
+        //     console.log(h3.innerText)
+        // }
+ const secondTitle =document.getElementById('second-title');
+ secondTitle.style.textAlign ='center'
+
+ const firstTitle =document.getElementById('first-title');
+ firstTitle.style.textAlign ='center'
+
+
+ const thirdTitle =document.getElementById('third-title');
+ thirdTitle.style.textAlign ='center'
+ 
+ const fourthTitle =document.getElementById('fourth-title');
+ fourthTitle.style.textAlign ='center'
+
+
+
+const blogs =document.getElementsByClassName('blog');
+for(const blog of blogs){
+    blog.style.border='2px solid orange';
+    blog.style.borderRadius='5px';
+    blog.style.margin='5px';
+    blog.style.padding='5px';
+    blog.style.color='';
+}
+
+const li = document.createElement('li');
+li.innerText ='Blog-5';
+const ul = document.getElementById('blog-list');
+ul.appendChild(li);
+
+const articale = document.createElement('articale');
+articale.classList.add('blog');
+const h3 =document.createElement('h3');
+h3.innerText ='My Awesome Blog-5'
+
+const p = document.createElement('p');
+p.innerText=' There is a saying that, the founder of Dhaka (representative of mughal emperor) was attracted to one of the beautiful girls. He invited Sheikh Enayet Ullah to a party one night and killed him in a conspiracy when he was returning home. That girl also committed suicide in anger and sorrow. There was a grave of Sheikh Enayet Ullah in the north-east corner of the palace yard which was ruined in the beginning of the 20th century.';
+articale.appendChild(h3);
+articale.appendChild(p);
+
+const blogSection =document.getElementById('blogs');
+blogSection.appendChild(articale);
+
+
+
+
+        //console.log(blogTitles);
+    </script>
+</body>
+</html>
